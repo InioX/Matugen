@@ -30,6 +30,14 @@ pretty_env_logger = "0.4.0"
 log = "0.4.17"
 paris-log = { version = "1.0.2", features = ["icons"] }
 colors-transform = "0.2.11"
+ariadne = "0.3.0"
+chumsky = { version = "1.0.0-alpha.4", features = ["label"] }
+criterion = "0.5.1"
+logos = "0.13.0"
+
+[[bench]]
+name = "benchy"
+harness = false
 
 [patch.crates-io]
 material-color-utilities-rs = { path = "./material-color-utilities-rs" }
