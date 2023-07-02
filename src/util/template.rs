@@ -121,7 +121,7 @@ impl Template {
                         None => String::new(),
                     };
 
-                    // println!("\n\n{}\n\n", span);
+                    println!("\n\n replace: {}\n\n", &new_src[span.into_range()]);
                     new_src.replace_range(span.into_range(), "bleh");
 
                     let source = format!("{:<42}", &src[span.into_range()]);
@@ -132,7 +132,7 @@ impl Template {
                 }
             }
 
-            println!("{}", new_src);
+            // println!("{}", new_src);
             println!("-------------------------")
 
             // let mut output_file = OpenOptions::new()
